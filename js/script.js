@@ -22,8 +22,8 @@ function myButtonClicked() {
   const intA = parseFloat(document.getElementById("integer-a").value)
   const intB = parseFloat(document.getElementById("integer-b").value)
 
-while (intA < intA * intB) {
-    document.getElementById("multiplication-product").innerHTML = "<p>The product is equal to</p> + intA"
-
-} 
+  while (intA < intA * intB) {
+    document.getElementById("multiplication-product").innerHTML =
+      "<p>The product is equal to</p> + intA"
+  }
 }
