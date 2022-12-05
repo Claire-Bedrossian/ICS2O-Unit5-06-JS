@@ -16,14 +16,23 @@ if (navigator.serviceWorker) {
 }
 
 /**
- * This function displays an alert.
+ * This function does multiplication.
  */
 function myButtonClicked() {
-  const intA = parseFloat(document.getElementById("integer-a").value)
-  const intB = parseFloat(document.getElementById("integer-b").value)
-
-  while (intA < intA * intB) {
-    document.getElementById("multiplication-product").innerHTML =
-      "<p>The product is equal to</p> + intA"
-  }
+  var numA = parseFloat(document.getElementById("integer-a").value)
+  var numB = parseFloat(document.getElementById("integer-b").value)
+  var product = 0
+  var counter = 0
+      
+while (counter < Math.abs(numB)) 
+{
+counter++;
+product = product + Math.abs(numA);
 }
+
+if ((numA < 0 && numB > 0) || (numB < 0 && numA > 0) )
+ document.getElementById("multiplication-product").innerHTML = "The product is equal to -" + product + "."
+else
+ document.getElementById("multiplication-product").innerHTML = "The product is equal to" + product + "." 
+}
+
