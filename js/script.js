@@ -31,8 +31,8 @@ function myButtonClicked() {
 
   if ((numA < 0 && numB > 0) || (numB < 0 && numA > 0))
     document.getElementById("multiplication-product").innerHTML =
-      "The product is equal to -" + product + "."
+      "The product is equal to - " + product + "."
   else
     document.getElementById("multiplication-product").innerHTML =
-      "The product is equal to" + product + "."
+      "The product is equal to " + product + "."
 }
