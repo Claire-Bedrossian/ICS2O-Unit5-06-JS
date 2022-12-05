@@ -23,16 +23,16 @@ function myButtonClicked() {
   var numB = parseFloat(document.getElementById("integer-b").value)
   var product = 0
   var counter = 0
-      
-while (counter < Math.abs(numB)) 
-{
-counter++;
-product = product + Math.abs(numA);
-}
 
-if ((numA < 0 && numB > 0) || (numB < 0 && numA > 0) )
- document.getElementById("multiplication-product").innerHTML = "The product is equal to -" + product + "."
-else
- document.getElementById("multiplication-product").innerHTML = "The product is equal to" + product + "." 
-}
+  while (counter < Math.abs(numB)) {
+    counter++
+    product = product + Math.abs(numA)
+  }
 
+  if ((numA < 0 && numB > 0) || (numB < 0 && numA > 0))
+    document.getElementById("multiplication-product").innerHTML =
+      "The product is equal to -" + product + "."
+  else
+    document.getElementById("multiplication-product").innerHTML =
+      "The product is equal to" + product + "."
+}
